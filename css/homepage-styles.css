@@ -14,6 +14,27 @@ Less than 75 characters per line.
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
 
-.abc {
-  font-family: "Irish Grover";
+.donate {
+  display: flex;
+  background-color: #a7c957;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+
+.donate div {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  /* padding: 5px 0; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.donate div:last-child {
+  border: #000 solid 1px;
+  border-radius: 50px;
+  padding: 0 25px;
+
+  font-weight: 700;
 }
