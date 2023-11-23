@@ -14,24 +14,147 @@ Less than 75 characters per line.
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
 
-.skewed-btn {
+.skewed-btn-visit {
   background-color: #e5b04b;
   color: black;
   font-family: "Irish Grover";
-  padding: 5px 15px;
+  padding: 1% 4%;
   border: none;
   transform: rotate(-10deg);
   transition: transform 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  cursor: pointer;
 }
 
-.skewed-btn p:first-child {
-  font-size: 1rem;
-}
-
-.skewed-btn p:last-child {
+.skewed-btn-visit p:first-child {
   font-size: 0.6rem;
 }
 
-.skewed-btn:hover {
+.skewed-btn-visit p:last-child {
+  font-size: 0.3rem;
+}
+
+.skewed-btn-visit:hover {
   transform: rotate(-8deg);
+}
+
+.encouraging-element {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.introduction {
+  height: 20vh;
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+  margin-bottom: 12%;
+}
+
+.introduction > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: change-image 15s infinite;
+  opacity: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20%));
+}
+
+.introduction > div:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.introduction > div:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes change-image {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+
+.explore-together {
+  height: 60vh;
+  width: 100%;
+}
+
+.explore-together div {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.explore-together div div {
+  height: 80%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.explore-together div div h1 {
+  font-family: "Irish Grover";
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.explore-together div div p {
+  font-size: 0.55rem;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-left: 6%;
+  margin-right: 2%;
+}
+
+.middle-p {
+  margin: 5% 0;
+}
+
+.skewed-btn-explore {
+  background-color: #0b7285;
+
+  font-family: "Irish Grover";
+  font-size: 1.2rem;
+  padding: 2% 11%;
+  border: none;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+  position: absolute;
+  bottom: 8%;
+  right: 10px;
+  cursor: pointer;
+}
+
+.skewed-btn-explore a p {
+  animation: change-size 5s infinite;
+  color: #fff;
+}
+
+@keyframes change-size {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
