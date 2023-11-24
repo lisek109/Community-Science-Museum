@@ -203,6 +203,14 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   display: block;
 }
 
+.carousel-slide:first-of-type {
+  display: block;
+}
+
+.carousel-slide:target ~ .carousel-slide:first-of-type {
+  display: none;
+}
+
 .carousel-slide p {
   font-size: 0.55rem;
   line-height: 2;
