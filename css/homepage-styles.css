@@ -158,3 +158,57 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
     transform: scale(1.2);
   }
 }
+
+.exhibition-spaces > h2 {
+  color: #567708;
+  font-family: "Irish Grover";
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+.carousel {
+  position: relative;
+  background-color: #1098ad;
+  padding-bottom: 30%;
+}
+
+.carousel-slide {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-slide > img {
+  width: 98%;
+  height: 200px;
+  margin-top: -15%;
+}
+
+.carousel-button {
+  position: absolute;
+  bottom: 10%;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-slide:target {
+  display: block;
+}
+
+.carousel-slide p {
+  font-size: 0.55rem;
+  line-height: 2;
+  text-align: left;
+}
+
+.carousel-slide h2 {
+  margin: 10px 0;
+}
