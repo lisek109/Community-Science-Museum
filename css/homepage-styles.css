@@ -159,7 +159,8 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   }
 }
 
-.exhibition-spaces > h2 {
+.exhibition-spaces > h2,
+.special-events > h2 {
   color: #567708;
   font-family: "Irish Grover";
   font-weight: 400;
@@ -168,6 +169,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   margin-bottom: 60px;
   margin-top: 50px;
 }
+
 .carousel {
   position: relative;
   background-color: #1098ad;
@@ -203,13 +205,20 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   display: block;
 }
 
-.carousel-slide:first-of-type {
+.carousel-slide:first-child {
   display: block;
 }
 
-.carousel-slide:target ~ .carousel-slide:first-of-type {
+.carousel-slide:target ~ .carousel-slide:first-child {
   display: none;
 }
+
+/* #slide2:target ~ .carousel-slide:first-of-type,
+#slide3:target ~ .carousel-slide:first-of-type,
+#slide4:target ~ .carousel-slide:first-of-type,
+#slide5:target ~ .carousel-slide:first-of-type {
+  display: none;
+} */
 
 .carousel-slide p {
   font-size: 0.55rem;
@@ -219,4 +228,82 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
 .carousel-slide h2 {
   margin: 10px 0;
+}
+
+.event img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  grid-column: 1/1;
+  grid-row: 1/3;
+}
+
+.event p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.event h3 {
+  font-size: 0.9rem;
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 30px 30px auto;
+  row-gap: 10px;
+  margin: 0 10px;
+}
+
+.event-p-1 {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  align-self: self-end;
+}
+
+.event-p-2 {
+  grid-column: -1/1;
+}
+
+.first-event {
+  margin-bottom: 50px;
+}
+
+.special-events {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-events button {
+  font-weight: 600;
+  margin: 30px auto;
+  padding: 4% 12%;
+  border: 2px solid #0b7285;
+}
+
+.regular-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regular-events h2 {
+  margin-bottom: 10px;
+}
+
+.regular-events p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 30px 20px 30px;
+}
+
+.image-container {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 30px auto;
 }
