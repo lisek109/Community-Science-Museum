@@ -41,7 +41,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .encouraging-element {
-  height: 70%;
+  height: 80%;
   position: absolute;
   left: 0;
   top: 10%;
@@ -90,7 +90,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .explore-together {
-  height: 60vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -114,10 +114,11 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   text-align: center;
   font-weight: 500;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .explore-together div div p {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 500;
   line-height: 1.7;
   margin-left: 6%;
