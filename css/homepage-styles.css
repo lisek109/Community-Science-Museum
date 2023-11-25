@@ -289,6 +289,10 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   align-items: center;
 }
 
+.regular-events > div:first-child {
+  margin-top: 60px;
+}
+
 .regular-events h2 {
   margin-bottom: 10px;
 }
