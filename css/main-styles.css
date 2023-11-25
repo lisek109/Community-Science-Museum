@@ -240,6 +240,7 @@ footer > p:first-of-type {
 
 footer > p:nth-of-type(2) {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 footer > p:nth-of-type(3) {
