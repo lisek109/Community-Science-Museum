@@ -13,3 +13,114 @@ Less than 75 characters per line.
 
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
+
+main {
+  margin: 0 10px;
+}
+
+.welcome-section h2 {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.welcome {
+  width: 40%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.welcome-image {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-image img {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.welcome-section p {
+  margin-bottom: 30px;
+}
+
+.info-contact {
+  display: flex;
+}
+
+.info-contact > div {
+  flex: 1;
+}
+
+.info-contact div img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+.info-contact p {
+  font-size: 0.9rem;
+}
+
+.info-contact p:last-child {
+  margin-bottom: 60px;
+}
+
+.input-section > div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.background {
+  width: 90px;
+  height: 120px;
+  position: relative;
+}
+
+.question-mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.question-mark img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+.contact-form button {
+  width: 40%;
+  padding: 10px;
+  margin-left: 60%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background-color: #ff006e;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  border-style: none;
+}

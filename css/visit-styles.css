@@ -14,13 +14,11 @@ Less than 75 characters per line.
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
 
+a:link {
+  color: #fff;
+}
 .contact-info {
   margin: 0 10px;
-}
-
-.contact-info p {
-  line-height: 1.6;
-  letter-spacing: 0.9px;
 }
 
 .contact-info h3 {
@@ -90,6 +88,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .bottom-section p {
+  font-size: 0.9rem;
   margin-bottom: 20px;
 }
 

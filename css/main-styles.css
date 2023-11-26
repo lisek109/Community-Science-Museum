@@ -48,6 +48,12 @@ a:hover {
   /* font-weight: 600; */
 }
 
+.common-p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #000;
+}
+
 .header {
   color: #567708;
   font-family: "Irish Grover";

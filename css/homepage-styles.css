@@ -90,7 +90,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .explore-together {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
 }
 
@@ -103,7 +103,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
 .explore-together div div {
   height: 90%;
-  width: 90%;
+  width: 95%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -119,9 +119,9 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .explore-together div div p {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   font-weight: 500;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   margin-left: 6%;
   margin-right: 2%;
 }
@@ -140,7 +140,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   transform: rotate(-10deg);
   transition: transform 0.3s ease;
   position: absolute;
-  bottom: 8%;
+  bottom: 5%;
   right: 10px;
   cursor: pointer;
 }
@@ -239,11 +239,6 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   grid-row: 1/3;
 }
 
-.event p {
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
 .event h3 {
   font-size: 1rem;
   grid-column: 2/2;
@@ -301,8 +296,6 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .regular-events p {
-  font-size: 0.9rem;
-  line-height: 1.5;
   margin: 0 30px 20px 30px;
 }
 
