@@ -23,8 +23,8 @@ main a:link {
 }
 
 .welcome-section h2 {
-  font-size: 1rem;
-  margin-bottom: 50px;
+  font-size: 1.1rem;
+  margin-bottom: 80px;
 }
 
 .welcome {
@@ -74,7 +74,7 @@ main a:link {
 }
 
 .info-contact p:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .input-section > div {
