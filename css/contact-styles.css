@@ -18,6 +18,10 @@ main {
   margin: 0 10px;
 }
 
+main a:link {
+  color: #000;
+}
+
 .welcome-section h2 {
   font-size: 1rem;
   margin-bottom: 50px;

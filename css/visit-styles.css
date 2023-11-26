@@ -14,9 +14,10 @@ Less than 75 characters per line.
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
 
-a:link {
+main a:link {
   color: #000;
 }
+
 .contact-info {
   margin: 0 10px;
 }
