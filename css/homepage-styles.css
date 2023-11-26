@@ -277,10 +277,11 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .special-events button {
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 30px auto;
   padding: 4% 12%;
-  border: 2px solid #0b7285;
+  border: 3px solid #0b7285;
 }
 
 .regular-events {
