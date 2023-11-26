@@ -128,3 +128,7 @@ main a:link {
   letter-spacing: 1px;
   border-style: none;
 }
+
+#message {
+  height: 150px;
+}
