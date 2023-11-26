@@ -65,4 +65,34 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
 .movie {
   margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie iframe {
+  width: 90%;
+}
+
+.bottom-section {
+  margin: 0 10px;
+}
+
+.accessible {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.accessible div img {
+  width: 140%;
+}
+
+.bottom-section p {
+  margin-bottom: 20px;
+}
+
+.bottom-section p:last-child {
+  margin-bottom: 50px;
 }
