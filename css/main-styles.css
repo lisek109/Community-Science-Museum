@@ -473,4 +473,22 @@ footer a {
     font-size: 4.5rem;
     margin-bottom: 100px;
   }
+
+  .common-p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-down a {
+    font-size: 1.4rem;
+  }
+
+  .menu-down p {
+    font-size: 1.4rem;
+  }
+
+  .upper {
+    font-size: 1.2rem;
+  }
 }

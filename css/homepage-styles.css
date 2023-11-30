@@ -450,8 +450,8 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
     font-size: 1.1rem;
   }
 
-  main section:not(.introduction) {
-    margin: 0 50px;
+  .explore-together {
+    margin: 0 5%;
   }
 
   .explore-together div {
@@ -477,9 +477,16 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
     display: none;
   }
 
-  /* .carousel-slide {
+  .reg-spec-events {
     display: flex;
-  } */
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .regular-events {
+    margin-left: 0px;
+  }
 }
 
 .exhibition-spaces {
@@ -526,5 +533,36 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 @media screen and (min-width: 1000px) {
   .exhibition-spaces > h2 {
     font-size: 4.2rem;
+  }
+
+  .image-container {
+    width: 40%;
+    padding-bottom: 40%;
+  }
+
+  .special-events p {
+    font-size: 1.2rem;
+  }
+
+  .regular-events p {
+    font-size: 1.2rem;
+  }
+
+  .event {
+    margin-bottom: 100px;
+  }
+
+  .explore-together div {
+    height: 90%;
+  }
+
+  .explore-together p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .explore-together div {
+    height: 80%;
   }
 }
