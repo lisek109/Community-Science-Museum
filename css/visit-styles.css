@@ -63,6 +63,43 @@ main a:link {
   margin-bottom: 20px;
 }
 
+.movie {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie iframe {
+  width: 90%;
+}
+
+.bottom-section {
+  margin: 0 10px;
+}
+
+.accessible {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.accessible div img {
+  width: 140%;
+}
+
+.bottom-section p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.bottom-section p:last-child {
+  margin-bottom: 50px;
+}
+
+/* ***************** Media Queries ************** */
+
 @media screen and (min-width: 700px) {
   .contact-info {
     display: flex;
@@ -104,39 +141,4 @@ main a:link {
   .accessible {
     margin: 0 5%;
   }
-}
-
-.movie {
-  margin-bottom: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.movie iframe {
-  width: 90%;
-}
-
-.bottom-section {
-  margin: 0 10px;
-}
-
-.accessible {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 20px;
-}
-
-.accessible div img {
-  width: 140%;
-}
-
-.bottom-section p {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-.bottom-section p:last-child {
-  margin-bottom: 50px;
 }

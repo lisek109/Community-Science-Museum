@@ -124,3 +124,87 @@ h3 {
 .fifth-section {
   margin-bottom: 50px;
 }
+
+/* ************* Media Queries ************ */
+
+@media screen and (min-width: 700px) {
+  .desktop-first-section {
+    display: flex;
+  }
+
+  main h3 {
+    font-size: 2rem;
+  }
+
+  .first-section,
+  .third-section,
+  .fifth-section,
+  .fourth-section,
+  .sixth-section {
+    margin-left: 5%;
+  }
+
+  .left-image {
+    width: 80%;
+    height: 90%;
+  }
+
+  .right-down-image {
+    height: 90%;
+  }
+
+  .right-upper-image img {
+    width: 80%;
+    height: 90%;
+  }
+
+  .left {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    height: 90%;
+    width: 70%;
+    padding-top: 20px;
+  }
+
+  .right-upper {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    height: 100%;
+    padding-top: 30px;
+    margin-right: 10px;
+  }
+
+  .right-down {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    height: 100%;
+    padding: 20px 0;
+    margin-top: 100px;
+  }
+
+  .images-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 40% 30%;
+    gap: 20px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+  }
+
+  .welcome {
+    margin-right: 5%;
+  }
+
+  .third-fourth {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 3%;
+  }
+
+  .fifth-sixth {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+}
