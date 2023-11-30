@@ -119,9 +119,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .explore-together div div p {
-  /* font-size: 0.9rem; */
   font-weight: 500;
-  /* line-height: 1.7; */
   margin-left: 6%;
   margin-right: 2%;
 }
@@ -132,7 +130,6 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
 .skewed-btn-explore {
   background-color: #0b7285;
-
   font-family: "Irish Grover";
   font-size: 1.2rem;
   padding: 2% 11%;
@@ -140,7 +137,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   transform: rotate(-10deg);
   transition: transform 0.3s ease;
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   right: 10px;
   cursor: pointer;
 }
@@ -160,36 +157,153 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   }
 }
 
-.exhibition-spaces > h2,
+.exhibition-spaces-container > h2,
 .special-events > h2 {
   color: #567708;
   font-family: "Irish Grover";
   font-weight: 400;
   font-size: 2.2rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   margin-top: 100px;
 }
 
-.carousel {
+/* .carousel {
   position: relative;
   background-color: #1098ad;
   padding-bottom: 30%;
-}
+} */
 
-.carousel-slide {
+/* .carousel-slide {
   display: none;
   text-align: center;
   padding: 20px;
+} */
+
+/* ********************************* */
+
+.carousel-container {
+  position: relative;
+  height: 600px;
 }
 
-.carousel-slide > img {
-  width: 98%;
-  height: 200px;
-  margin-top: -15%;
+/* #slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5 {
+  display: none;
 }
 
-.carousel-button {
+.carousel-container .slide:target {
+  display: block;
+}
+
+.carousel-container #slide1 {
+  display: block;
+} */
+
+.buttons {
+  bottom: 110px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.left {
+  margin-left: 10px;
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.text h2 {
+  text-align: center;
+}
+
+.text p {
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: left;
+  margin: 10px;
+}
+
+.text {
+  flex: 4;
+}
+
+.text-btn {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.slide {
+  /* height: 600px; */
+}
+
+.carousel-container .slide {
+  /* display: block;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.5s; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-container .slide:target ~ #slide1,
+.carousel-container .slide:target ~ .text-btn {
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-container .slide:target {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-container .slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.background-image {
+  background-color: #1098ad;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-div {
+  height: 300px;
+  width: 90%;
+  position: relative;
+  top: -20px;
+  display: flex;
+}
+
+.image-div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ************************************ */
+
+/* .carousel-button {
   position: absolute;
   bottom: 10%;
 }
@@ -200,9 +314,9 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
 .carousel-button.right {
   right: 10px;
-}
+} */
 
-.carousel-slide:target {
+/* .carousel-slide:target {
   display: block;
 }
 
@@ -214,7 +328,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   display: none;
 }
 
-/* #slide2:target ~ .carousel-slide:first-of-type,
+#slide2:target ~ .carousel-slide:first-of-type,
 #slide3:target ~ .carousel-slide:first-of-type,
 #slide4:target ~ .carousel-slide:first-of-type,
 #slide5:target ~ .carousel-slide:first-of-type {
@@ -325,5 +439,100 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   .explore-together {
     height: 120vh;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .introduction {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 12%;
+  }
+
+  .skewed-btn-visit p:first-child {
+    font-size: 1.4rem;
+  }
+
+  .skewed-btn-visit p:last-child {
+    font-size: 1.1rem;
+  }
+
+  main section:not(.introduction) {
+    margin: 0 50px;
+  }
+
+  .explore-together div {
+    height: 70%;
+    width: 80%;
+  }
+
+  .middle-p {
+    margin: 2% 0;
+  }
+
+  .explore-together div div h1 {
+    margin-bottom: 3%;
+  }
+
+  .exhibition-spaces-container > h2 {
+    margin-top: 10px;
+    margin-bottom: 15%;
+    font-size: 3.2rem;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  /* .carousel-slide {
+    display: flex;
+  } */
+}
+
+.exhibition-spaces {
+  display: none;
+}
+/* 
+.background-img {
+  
+  width: 80%;
+}
+
+.c-image img {
+  width: 90%;
+  height: 40vh;
+  margin-top: -15%;
+}
+
+.c-image img {
+  width: 90%;
+  position: absolute;
+}
+
+.first-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+
+.carousel-slide {
+  display: none;
+  background-color: #1098ad;
+  height: 250%;
+  
+}
+
+.carousell {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+} */
+
+@media screen and (min-width: 1000px) {
+  .exhibition-spaces > h2 {
+    font-size: 4.2rem;
   }
 }
