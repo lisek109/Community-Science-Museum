@@ -137,11 +137,15 @@ h3 {
   }
 
   .first-section,
-  .third-section,
   .fifth-section,
   .fourth-section,
   .sixth-section {
     margin-left: 5%;
+  }
+
+  .third-section,
+  .sixth-section {
+    margin-right: 5%;
   }
 
   .left-image {

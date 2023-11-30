@@ -469,7 +469,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
   .exhibition-spaces-container > h2 {
     margin-top: 10px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     font-size: 3.2rem;
   }
 
@@ -487,11 +487,47 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   .regular-events {
     margin-left: 0px;
   }
+
+  .exhibition-spaces-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .text {
+    flex: 3;
+  }
+
+  .buttons {
+    flex: 2;
+    align-items: start;
+    justify-content: space-around;
+  }
+
+  .background-image {
+    background-color: #1098ad;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-div {
+    height: 600px;
+    width: 90%;
+    position: relative;
+    top: -20px;
+    display: flex;
+  }
+
+  .carousel-container {
+    height: 1000px;
+  }
 }
 
 .exhibition-spaces {
   display: none;
 }
+
 /* 
 .background-img {
   

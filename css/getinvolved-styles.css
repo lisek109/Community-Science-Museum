@@ -14,13 +14,13 @@ Less than 75 characters per line.
 For normal-sized text are line-height between 1.5 and 2. For big text below 1.5. 
 */
 
-main section:first-child p {
-  margin-left: 10px;
-  margin-bottom: 50px;
-}
-
 main p {
   margin-bottom: 20px;
+}
+
+.header-p {
+  margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 .welcome {
@@ -104,4 +104,58 @@ ul {
 .fourth-section p {
   margin: 0 10px;
   margin-bottom: 20px;
+}
+
+/* ************** Media Queries ************** */
+
+@media screen and (min-width: 700px) {
+  .desktop-first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .header-p {
+    margin-left: 5%;
+  }
+
+  .image-section {
+    flex: 2;
+  }
+
+  .second-section {
+    flex: 3;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    margin-top: 3%;
+    padding: 20px 0;
+    width: 60%;
+  }
+
+  .second-desktop {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .third-section {
+    flex: 2;
+  }
+
+  .fourth-section {
+    margin-top: 50px;
+    flex: 3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header-p {
+    font-size: 1.2rem;
+  }
 }
