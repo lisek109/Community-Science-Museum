@@ -32,8 +32,9 @@ main a:link {
   margin-bottom: 6%;
 }
 
-.p-bold {
+.p-bold-visit {
   font-weight: 600;
+  color: #000;
 }
 
 .p-last {
@@ -60,6 +61,49 @@ main a:link {
   font-size: 1.2rem;
   margin-top: 70px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .contact-info {
+    display: flex;
+  }
+
+  .contact-info,
+  .movie {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .center-container {
+    flex: 1;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .upper-section {
+    flex: 1;
+  }
+
+  .movie-description {
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 20px;
+  }
+
+  .movie iframe {
+    height: 550px;
+  }
+
+  .movie {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .bottom-section p,
+  .accessible {
+    margin: 0 5%;
+  }
 }
 
 .movie {

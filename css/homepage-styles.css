@@ -246,14 +246,6 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .carousel-container .slide {
-  /* display: block;
-  opacity: 0;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 0.5s; */
   position: absolute;
   top: 0;
   left: 0;
