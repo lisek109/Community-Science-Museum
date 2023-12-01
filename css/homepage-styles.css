@@ -26,13 +26,14 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   bottom: 0;
   right: 10px;
   cursor: pointer;
+  text-align: center;
 }
 
-.skewed-btn-visit p:first-child {
+.skewed-btn-visit a:first-child {
   font-size: 0.9rem;
 }
 
-.skewed-btn-visit p:last-child {
+.skewed-btn-visit a:last-child {
   font-size: 0.6rem;
 }
 
@@ -90,7 +91,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 }
 
 .explore-together {
-  height: 95vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -118,7 +119,8 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   margin-top: 5%;
 }
 
-.explore-together div div p {
+.explore-together div div p,
+.explore-together div div a {
   font-weight: 500;
   margin-left: 6%;
   margin-right: 2%;
@@ -134,15 +136,18 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   font-size: 1.2rem;
   padding: 2% 11%;
   border: none;
-  transform: rotate(-10deg);
   transition: transform 0.3s ease;
   position: absolute;
   bottom: 2%;
   right: 10px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  animation: change-size 5s infinite;
+  color: #fff;
 }
 
-.skewed-btn-explore a p {
+.skewed-btn-explore .animated-text {
   animation: change-size 5s infinite;
   color: #fff;
 }
@@ -153,7 +158,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
     transform: scale(1);
   }
   50% {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }
 
@@ -391,7 +396,7 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   }
 
   .explore-together {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
   }
 }
@@ -417,8 +422,8 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   }
 
   .explore-together div {
-    height: 70%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
   }
 
   .middle-p {
@@ -536,6 +541,10 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 
   .explore-together p {
     font-size: 1.2rem;
+  }
+
+  .skewed-btn-explore {
+    font-size: 1.6rem;
   }
 }
 
