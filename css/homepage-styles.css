@@ -163,10 +163,23 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   grid-row: 1fr 1fr 1fr;
   gap: 10px;
   margin: 0 10px;
+  justify-items: center;
+}
+
+.image-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-div img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-exhibition {
+  font-weight: 600;
 }
 
 .carousel-container {
@@ -275,11 +288,6 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   top: -20px;
   display: flex;
 } */
-
-.image-div img {
-  width: 100%;
-  object-fit: cover;
-}
 
 .carousel-slide p {
   font-size: 0.9rem;
@@ -473,9 +481,22 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
   .image-div {
     height: 600px;
     width: 90%;
+    height: 90%;
     position: relative;
     top: -20px;
     display: flex;
+  }
+
+  .static {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  .p-exhibition {
+    font-size: 1.1rem;
   }
 
   .carousel-container {
@@ -486,6 +507,10 @@ For normal-sized text are line-height between 1.5 and 2. For big text below 1.5.
 @media screen and (min-width: 1000px) {
   .exhibition-spaces > h2 {
     font-size: 4.2rem;
+  }
+
+  .p-exhibition {
+    font-size: 1.4rem;
   }
 
   .image-container {

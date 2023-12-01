@@ -119,6 +119,10 @@ main a:link {
   border: 1px solid #000;
 }
 
+.contact-form label {
+  display: none;
+}
+
 .contact-form button {
   width: 40%;
   padding: 10px;
@@ -128,7 +132,7 @@ main a:link {
   background-color: #ff006e;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   letter-spacing: 1px;
   border-style: none;
 }
@@ -184,7 +188,7 @@ main a:link {
   }
 
   .info-contact {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
   }
 
   .info-contact div img {
@@ -202,7 +206,9 @@ main a:link {
   .input-section {
     display: flex;
     justify-content: space-between;
-    margin: 0 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    position: relative;
   }
 
   .header-picture {
@@ -211,6 +217,12 @@ main a:link {
     flex-direction: column-reverse;
     justify-content: start;
     flex: 2;
+  }
+
+  .background {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
   }
 
   .contact-form {
@@ -230,18 +242,15 @@ main a:link {
     padding: 10px;
     margin-left: 60%;
     transform: translateX(-50%);
-    margin-top: 10px;
-    margin-bottom: 50px;
+
     background-color: #ff006e;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-    border-style: none;
   }
 
   .header-picture h2 {
     font-size: 2.3rem;
+    position: absolute;
+    left: 0;
   }
 
   .background {

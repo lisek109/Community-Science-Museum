@@ -141,4 +141,18 @@ main a:link {
   .accessible {
     margin: 0 5%;
   }
+
+  .accessible {
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+  }
+
+  .accessible div img {
+    width: 290%;
+  }
+
+  .bottom-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+  }
 }
