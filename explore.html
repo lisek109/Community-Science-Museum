@@ -19,14 +19,19 @@
     <title>Explore | CSM</title>
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WF24LRSRZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7WF24LRSRZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-7WF24LRSRZ');
-</script>
+    gtag("config", "G-7WF24LRSRZ");
+  </script>
   <body>
     <header>
       <div class="donate">
@@ -196,10 +201,12 @@
             Be the first to find out about events & special programs.
           </p>
           <div class="sign-btn-container-desktop">
+            <label for="email">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
-              class="email-input-desktop"
+              class="email-input"
             />
             <button type="submit" class="sign-btn-desktop">SIGN UP</button>
           </div>
@@ -290,8 +297,10 @@
         Be the first to find out about events & special programs.
       </p>
       <div class="sign-btn-container">
+        <label for="email">Email</label>
         <input
           type="email"
+          name="email"
           placeholder="Enter your email"
           class="email-input"
         />

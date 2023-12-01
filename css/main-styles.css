@@ -423,6 +423,11 @@ footer a {
   display: none;
 }
 
+.sign-btn-container-desktop label,
+.sign-btn-container label {
+  display: none;
+}
+
 /* *********Media Queries********** */
 
 @media screen and (min-width: 1000px) {
@@ -468,6 +473,19 @@ footer a {
     width: 200px;
     gap: 60px;
     margin-left: 5%;
+  }
+
+  .sign-btn-desktop {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .sign-btn-container-desktop {
+    height: 35px;
+  }
+
+  .sign-btn-container-desktop input {
+    padding-left: 120px;
   }
 
   .header {
